@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACHOU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="centralizar">
+        <div id="erro" style="display:none" class="alert alert-danger alert-dismissible fade show">
+            <button type="button" class="close" onclick="hide()">&times;</button>
+            <spam>AVISO IMPORTANTE: o sistema esta em manutenção</spam>
+        </div>
+        <div id="campobtn">
+            <button id="btn1" class="btn" onclick="one()">1 seg</button>
+            <button id="btn5" class="btn" onclick="five()">5 seg</button>
+            <button id="btn10" class="btn" onclick="ten()">10 seg</button>
+            <button id="btn30" class="btn" onclick="thirty()">30 seg</button>
+            <!-- FUNCOES PARA USER -->
+            <button class="btn" onclick="envioMenor()">envia funcao para user 1seg</button>
+            <button class="btn" onclick="envio()">envia funcao para user 5seg</button>
+            <button class="btn" onclick="envioMaior()">envia funcao para user 10seg</button>
+            
+        </div>
+        
+        
+        <!-- TIME -->
+        <label for="appt">Temporizador de Horario</label>
+        
+        <input type="time" id="appt" name="appt"
+        min="00:00" max="24:00" required>
+        <input type="submit" id="send" value="Enviar">
+        <button onclick="cancel()">cancel</button>
+    </div>
+</div>
+
+    <script src='/socket.io/socket.io.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>

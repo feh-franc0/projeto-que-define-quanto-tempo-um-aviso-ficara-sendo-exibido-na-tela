@@ -1,0 +1,29 @@
+#centralizar{
+    width: 30vh;
+    height: 30vh;
+    display: inline-block;
+    align-items: center;
+    background-color: beige;
+    text-align: center;
+}
+
+#campobtn{
+    margin-top: 1%;
+}
+
+.btn{
+    display: inline-block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 88, 46);
+}
+
+#erro{
+    color: white;
+    background-color: red;
+    display: inline-block;
+}
+.close{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
